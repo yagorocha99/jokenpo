@@ -1,0 +1,16 @@
+*{
+    background-color: #122052;
+    text-decoration: none;
+    font-family: system-ui;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header{
+    align-items: center;
+    justify-content: center;
+}
