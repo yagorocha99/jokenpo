@@ -20,14 +20,14 @@
 }
 
 button {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
+    margin: 1vh;
+    padding: 1vh;
+    font-size: 1vw;
     cursor: pointer;
     background-color: #4f5b66;
     color: #f9faf8;
     border: none;
-    border-radius: 5px;
+    border-radius: 1.5vh;
 }
 
 button:hover {
@@ -53,22 +53,26 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fefefe;
-    padding: 20px;
-    border-radius: 5px;
+    background-color: #1f2937;
+    padding: 1vw;
+    border-radius: 0.5vw;
     text-align: center;
 }
 
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 2.8vh;
     font-weight: bold;
     cursor: pointer;
+    margin-left: 10vh;
+    margin-top: -0.9vw;
+    margin-right: -0.5vw;
+
 }
 
 #turns-history {
-    margin-top: 20px;
+    margin-top: 2vw;
 }
 
 #history-list {

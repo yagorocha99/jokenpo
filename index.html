@@ -16,23 +16,23 @@
 
         <div class="game">
 
-            <div id="player">
+            <div id="player" class="status-box">
                 <h2>Player lives</h2>
                 <h3>5</h3>
             </div>
-
-            <div id="machine">
-                <h2>Machine lives</h2>
-                <h3>5</h3>
-            </div>
-
-            <div id="turns">
+        
+            <div id="turns" class="status-box">
                 <h2>Turns</h2>
                 <h3>0</h3>
             </div>
+        
+            <div id="machine" class="status-box">
+                <h2>Machine lives</h2>
+                <h3>5</h3>
+            </div>
             
             <button onclick="startGame()">Start Game</button>
-
+        
             <div id="buttons-container" style="display: none;">
                 <button onclick="makeSelection('Jo')">Jo</button>
                 <button onclick="makeSelection('Ken')">Ken</button>
@@ -42,16 +42,16 @@
 
         <div id="result"></div>
 
-        <div id="custom-dialog" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeDialog()">&times;</span>
-            <p id="dialog-message"></p>
-          </div>
+        <div id="turns-history">
+            <h2>Turns History</h2>
+            <ul id="history-list"></ul>
         </div>
 
-        <div id="turns-history">
-          <h2>Turns History</h2>
-          <ul id="history-list"></ul>
+        <div id="custom-dialog" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeDialog()">&times;</span>
+                <p id="dialog-message"></p>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
