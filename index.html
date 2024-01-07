@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jokenpo!</title>
+    <title>Child game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
 
         <div class="header">
-            <h1>Jo - Ken - Po!</h1>
+            <h1>Rock - Paper - Scissors!</h1>
             <p>Challenge the machine</p>
         </div>
 
@@ -21,22 +21,23 @@
                 <h3>5</h3>
             </div>
         
+            <div id="machine" class="status-box">
+                <h2>Machine lives</h2>
+                <h3>5</h3>
+            </div>
+
             <div id="turns" class="status-box">
                 <h2>Turns</h2>
                 <h3>0</h3>
             </div>
         
-            <div id="machine" class="status-box">
-                <h2>Machine lives</h2>
-                <h3>5</h3>
-            </div>
             
             <button onclick="startGame()">Start Game</button>
         
             <div id="buttons-container" style="display: none;">
-                <button onclick="makeSelection('Jo')">Jo</button>
-                <button onclick="makeSelection('Ken')">Ken</button>
-                <button onclick="makeSelection('Po')">Po</button>
+                <button onclick="makeSelection('👊')">👊</button>
+                <button onclick="makeSelection('🤚')">🤚</button>
+                <button onclick="makeSelection('✌️')">✌️</button>
             </div>
         </div>
 

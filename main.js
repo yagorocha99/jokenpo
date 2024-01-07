@@ -36,7 +36,7 @@ let disableButtons = () => {
     }
 };
 
-let getComputerChoice = () => ['Jo', 'Ken', 'Po'][Math.floor(Math.random() * 3)];
+let getComputerChoice = () => ['👊', '🤚', '✌️'][Math.floor(Math.random() * 3)];
 
 let playRound = (playerSelection, computerSelection) => {
     if (playerLives === 0 || machineLives === 0) {
@@ -48,9 +48,9 @@ let playRound = (playerSelection, computerSelection) => {
     if (playerSelection === computerSelection) {
         result = "It's a tie! Let's play again.";
     } else if (
-        (playerSelection === 'Jo' && computerSelection === 'Po') ||
-        (playerSelection === 'Ken' && computerSelection === 'Jo') ||
-        (playerSelection === 'Po' && computerSelection === 'Ken')
+        (playerSelection === '👊' && computerSelection === '✌️') ||
+        (playerSelection === '🤚' && computerSelection === '👊') ||
+        (playerSelection === '✌️' && computerSelection === '🤚')
     ) {
         machineLives--;
         result = `You Win! ${playerSelection} beats ${computerSelection}.`;
@@ -60,7 +60,6 @@ let playRound = (playerSelection, computerSelection) => {
     }
     updateUI();
 
-    // Add the result to the history list
     let historyList = document.getElementById('history-list');
     let historyItem = document.createElement('li');
     historyItem.textContent = result;
