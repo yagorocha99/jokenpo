@@ -9,12 +9,12 @@
 <body>
     <div class="container">
 
-        <div class="header">
-            <h1>Rock - Paper - Scissors!</h1>
-            <p>Challenge the machine</p>
-        </div>
-
         <div class="game">
+
+            <div class="header">
+                <h1>Rock - Paper - Scissors!</h1>
+                <p>Challenge the machine</p>
+            </div>
 
             <div id="player" class="status-box">
                 <h2>Player lives</h2>
@@ -39,14 +39,17 @@
                 <button onclick="makeSelection('🤚')">🤚</button>
                 <button onclick="makeSelection('✌️')">✌️</button>
             </div>
+            <div id="result"></div>
+            
         </div>
 
-        <div id="result"></div>
 
-        <div id="turns-history">
-            <h2>Turns History</h2>
-            <ul id="history-list"></ul>
-        </div>
+            <div id="turns-history">
+                <h2>Turns History</h2>
+                <ul id="history-list"></ul>
+            </div>
+
+
 
         <div id="custom-dialog" class="modal">
             <div class="modal-content">

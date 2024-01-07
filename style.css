@@ -7,15 +7,16 @@
 
 .container{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.header{
-    text-align: center;
+    justify-content: space-between;
+    /*flex-direction: column;*/
 }
 
 .game{
+    text-align: center;
+    margin-left: 37vw;
+}
+
+.header{
     text-align: center;
 }
 
@@ -39,7 +40,6 @@ button:hover {
 }
 
 #custom-dialog {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -72,6 +72,7 @@ button:hover {
 }
 
 #turns-history {
+    margin-right: 12vw;
     margin-top: 2vw;
 }
 
