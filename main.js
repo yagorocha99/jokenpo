@@ -69,10 +69,15 @@ let startGame = () => {
     turnsCount = 0;
     updateUI();
 
-    document.getElementById('buttons-container').style.display = 'block';
+    let buttons = document.getElementById('buttons-container').getElementsByTagName('button');
+    for (let button of buttons) {
+        button.disabled = false;
+    }
 
+    document.getElementById('buttons-container').style.display = 'block';
     document.getElementById('result').innerHTML = '';
 };
+
 
 let makeSelection = (playerSelection) => {
     let computerSelection = getComputerChoice();
