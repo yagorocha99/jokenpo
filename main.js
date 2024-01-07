@@ -13,11 +13,20 @@ let updateUI = () => {
 
     if (playerLives === 0) {
         disableButtons();
-        alert("Better luck next time!");
+        showDialog("Better luck next time!");
     } else if (machineLives === 0) {
         disableButtons();
-        alert("Congratulations, you win!");
+        showDialog("Congratulations, you win!");
     }
+};
+
+let showDialog = (message) => {
+    document.getElementById('dialog-message').innerText = message;
+    document.getElementById('custom-dialog').style.display = 'block';
+};
+
+let closeDialog = () => {
+    document.getElementById('custom-dialog').style.display = 'none';
 };
 
 let disableButtons = () => {

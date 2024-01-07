@@ -30,6 +30,7 @@
                 <h2>Turns</h2>
                 <h3>0</h3>
             </div>
+            
             <button onclick="startGame()">Start Game</button>
 
             <div id="buttons-container" style="display: none;">
@@ -40,6 +41,15 @@
         </div>
 
         <div id="result"></div>
+
+        <!-- Custom dialog div -->
+        <div id="custom-dialog" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeDialog()">&times;</span>
+            <p id="dialog-message"></p>
+          </div>
+        </div>
+
     </div>
     <script src="main.js"></script>
 </body>

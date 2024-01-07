@@ -19,11 +19,6 @@
     text-align: center;
 }
 
-#player,
-#machine,
-#turns {
-}
-
 button {
     margin: 10px;
     padding: 10px;
@@ -39,6 +34,36 @@ button:hover {
     background-color: #2b3945;
 }
 
-#result{
+#result, #custom-dialog{
     text-align: center;
 }
+
+#custom-dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
