@@ -34,7 +34,7 @@ button:hover {
     background-color: #2b3945;
 }
 
-#result, #custom-dialog{
+#result, #custom-dialog, #turns-history {
     text-align: center;
 }
 
@@ -67,3 +67,11 @@ button:hover {
     cursor: pointer;
 }
 
+#turns-history {
+    margin-top: 20px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+}

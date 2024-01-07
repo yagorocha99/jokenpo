@@ -60,6 +60,12 @@ let playRound = (playerSelection, computerSelection) => {
     }
     updateUI();
 
+    // Add the result to the history list
+    let historyList = document.getElementById('history-list');
+    let historyItem = document.createElement('li');
+    historyItem.textContent = result;
+    historyList.appendChild(historyItem);
+
     return result;
 };
 
@@ -68,6 +74,8 @@ let startGame = () => {
     machineLives = 5;
     turnsCount = 0;
     updateUI();
+
+    document.getElementById('history-list').innerHTML = '';
 
     let buttons = document.getElementById('buttons-container').getElementsByTagName('button');
     for (let button of buttons) {
